@@ -24,7 +24,7 @@
     ],
     // Tells devcontainer.json supporting services / tools whether they should run
     // /bin/sh -c "while sleep 1000; do :; done" when starting the container instead of the container’s default command
-    "overrideCommand": true,
+    // "overrideCommand": true,
     "service": "django",
     // "remoteEnv": {"PATH": "/home/dev-user/.local/bin:${containerEnv:PATH}"},
     "remoteUser": "dev-user",
@@ -82,5 +82,5 @@
     // "shutdownAction": "none",
     // Uncomment the next line to run commands after the container is created.
     "postCreateCommand": "cat .devcontainer/bashrc.override.sh >> ~/.bashrc",
-    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+    "postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}",
 }
