@@ -12,11 +12,7 @@ from django.utils.translation import gettext_lazy as _
 from todoum.users.forms import UserAdminChangeForm
 from todoum.users.models import User
 from todoum.users.tests.factories import UserFactory
-from todoum.users.views import (
-    UserRedirectView,
-    UserUpdateView,
-    user_detail_view,
-)
+from todoum.users.views import UserRedirectView, UserUpdateView, user_detail_view
 
 pytestmark = pytest.mark.django_db
 
