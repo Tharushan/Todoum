@@ -8,6 +8,13 @@ def step_page(context):
     context.page.wait_for_selector("input[name='username']")
 
 
+@given("I am authenticated")
+def step_authenticated(context):
+    context.page.fill("input[name='username']", "randomusernameadmin")
+    context.page.fill("input[name='password']", "randompassword")
+    context.page.click("text=Log in")
+
+
 @when('I fill in "{field}" with "{value}"')
 def step_input_fill(context, field, value):
     context.page.fill(f"input[name='{field}']", value)
