@@ -10,7 +10,7 @@ from django.test.testcases import LiveServerTestCase
 @fixture
 def django_test_runner(context):
     django.setup()
-    context.test_runner = DiscoverRunner()
+    context.test_runner = DiscoverRunner(interactive=False)  # Will be used in CI so no need for interactive
     context.test_runner.setup_test_environment()
     context.old_db_config = context.test_runner.setup_databases()
     yield
