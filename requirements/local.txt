@@ -17,7 +17,7 @@ pytest-playwright==0.4.2 # https://github.com/microsoft/playwright-python
 
 # Documentation
 # ------------------------------------------------------------------------------
-sphinx==7.2.3  # https://github.com/sphinx-doc/sphinx
+sphinx==7.2.5  # https://github.com/sphinx-doc/sphinx
 sphinx-autobuild==2021.3.14 # https://github.com/GaretJax/sphinx-autobuild
 
 # Code quality
